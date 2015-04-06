@@ -25,3 +25,4 @@ for n,genome in enumerate(genomes):
                     output_handle.write(">%s_%s\n%s\n" % (feature.qualifiers['gene'][0], genomes_short[n], str(feature.extract(record.seq))))
 
     output_handle.close()
+
