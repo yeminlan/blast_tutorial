@@ -22,3 +22,4 @@ for record in records:
     result_handle.close()
 
 save_file.close()
+
