@@ -22,3 +22,4 @@ for blast_record in blast_records:
                 print('query ' + hsp.query)
                 print('hit   ' + hsp.sbjct)
             break
+
