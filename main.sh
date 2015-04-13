@@ -1,4 +1,23 @@
 #!/bin/bash
+#$ -S /bin/bash
+#$ -cwd
+#$ -V
+#$ -M yl497@drexel.edu
+#$ -P nsftuesPrj
+#$ -l h_rt=24:00:00
+#$ -l h_vmem=2G
+# select the queue (must specify "all.q@@amdhosts" or "all.q@@intelhosts" when using parallel environment)
+#$ -q all.q
+# select parallel environment e.g. using 2 to 16 cores as available (for single-core use, remove the following line)
+#$ -pe shm 2-16
+
+# set up the environment
+. /etc/profile.d/modules.sh
+module load shared
+module load proteus
+module load sge/univa
+module load gcc/4.8.1
+
 
 # 00.Create work directory
 mkdir blast_tutorial
