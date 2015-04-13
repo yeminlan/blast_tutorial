@@ -25,10 +25,10 @@ cd blast_tutorial
 
 
 #1. Load BLAST module pre-installed on proteus
-module list
+# module list
 module load ncbi-blast/gcc/64/2.2.29
-blastn -h
-blastn -help
+# blastn -h
+# blastn -help
 # blastn/blastp/blastx/tblastn/tblastx
 # makeblastdb -h
 
@@ -43,7 +43,7 @@ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Escherichia_coli_K_12_substr__W
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Escherichia_coli_K_12_substr__W3110_uid161931/*.faa
 
 #2a_2. Build customized database from fasta files
-makeblastdb -h
+# makeblastdb -h
 makeblastdb -in *.ffn -dbtype nucl -out Ecoli -parse_seqids
 makeblastdb -in *.faa -dbtype prot -out Ecoli -parse_seqids
 # "-parse_seqids" if the sequence headers were in NCBI style and therefore can be parsed. For example:
